@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Subscription | QuickCook</title>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel = "shortcut  icon" href = "media/favicon.png"/>
+    <link rel = "icon" type ="image/png" sizes ="32x32" href = "media/favicon.png" />
+    <link rel = "apple-touch-icon" sizes="180x180" href = "media/favicon.png"/>
+    <link rel = "icon" sizes="192x192" href="media/favicon.png"/>
+  <link rel="stylesheet" href="subscription_min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="media/quickcooklogo.png" alt="QuickCook Logo">
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="recipes.html" class="nav-link">Recipes</a></li>
+          <li class="nav-item"><a href="subscription.html" class="nav-link">Subscription</a></li>
+          <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Subsciption plans -->
+  <section class="plan-subs tab-mob" id="plan-subs">
+    <h2>Choose Your Plan</h2>
+    <div class="subscription">
+      <!-- Plan 1 -->
+      <div class="plan-card">
+        <div class="plan-info">
+          <h3>Basic</h3>
+          <ul>
+            <li>10 Recipes per month.</li>
+            <li>Weekly newsletter (tips in cooking and featured recipes).</li>
+            <li>With ads.</li>
+          </ul>
+            <div class="plan-price">
+            <h4 id="price">For Free</h4>
+            </div>
+          <a href="#details" class="subscribe-button">Subscibe</a>
+        </div>
+      </div>
+
+      <!-- Plan 2 -->
+      <div class="plan-card">
+        <div class="plan-info">
+          <h3>Premium</h3>
+          <ul>
+            <li>Unlimited recipes</li>
+            <li>Weekly newsletter (tips in cooking and featured recipes).</li>
+            <li>Access to exclusive recipes.</li>
+            <li>Ad-free experience.</li>
+          </ul>
+            <div class="plan-price">
+            <h4 id="price">5$/month</h4>
+            </div>
+          <a href="#details" class="subscribe-button">Subscribe</a>
+        </div>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="plan-card">
+        <div class="plan-info">
+          <h3>Pro</h3>
+          <ul>
+            <li>Unlimited recipes</li>
+            <li>Weekly newsletter (tips in cooking and featured recipes).</li>
+            <li>Access to exclusive recipes.</li>
+            <li>Ad-free experience.</li>
+            <li>Video tutorials and cooking classes.</li>
+            <li>Discounts.</li>
+          </ul>
+            <div class="plan-price">
+            <h4 id="price">10$/month</h4>
+            </div>
+          <a href="#details" class="subscribe-button">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Customer Details-->
+  <section class="customer-details" id="details"> 
+    <div class="cus-details">
+      <form>
+        <h1>Customer Details</h1>
+        <div class="full-width">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email"><br>
+          <label for="phone">Phone:</label>
+          <input type="phone" id="phone" name="name">
+        </div>
+        <h3>Payment Method</h3>
+        <div class="height">
+          <input type="radio" id="creditcard" name="paymentmethod" value="CreditCard" >
+          <label for="creditcard" id="paymentmethod">Credit Card</label><br>
+          <label for="creditcardnum">Card Number:</label>
+          <input type="number" id="creditcardnum" name="creditcardnum">
+          <br><label for="exdate">Expiration Date:</label>
+          <input type="date" id="exdate" name="exdate">
+          <label for="cvv">CVV:</label>
+          <input type="number" id="cvv" name="cvv">
+          <br><label for="nameoncard">Name on the Card:</label>
+          <input type="text" id="nameoncard" name="nameoncard"><br>
+          <input type="radio" id="otherpaymeth" name="paymentmethod" value="Others">
+          <label for="otherpaymeth" id="paymentmethod">Other Payment Methods</label><br>
+          <select name="otherpaymeth" id="methods">
+            <option value="gcash">Gcash</option>
+            <option value="paypal">PayPal</option>
+            <option value="maya">Maya</option>
+            <option value="applepay">ApplePay</option>
+          </select>
+        </div>
+        <h3>Subscription Plan</h3>
+        <input type="radio" id="basic" name="subscription" value="Others">
+        <label for="basic">Basic</label>
+        <input type="radio" id="premium" name="subscription" value="premium">
+        <label for="premium">Premium</label>
+        <input type="radio" id="pro" name="subscription" value="pro">
+        <label for="pro">Pro</label>
+        <br>
+      <input type="checkbox" id="termscondi" name="termscondi" value="agree">
+      <label for="termscondi">I agree to the terms & conditions</label><br>
+
+      <button type="submit">Complete Purchase</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-top">
+    <div class="footer-content">
+      <div class="about">
+        <img src="media/quickcooklogo.png">
+        <p>Welcome to QuickCooks, where culinary convenience meets innovation. <br>We're passionate about transforming the way you experience and enjoy food. </p>
+        <div class="socials">
+          <a href="facebook.com/stay.aimee"><img src="media/icons8-facebook-100.png" alt="facebook icon"></a>
+          <a href="instagram.com/aimheehee.py"><img src="media/icons8-instagram-100.png" alt="instagram icon"></a>
+          <a href="pinterest.com"><img src="media/icons8-pinterest-100.png" alt="pinterest icon"></a>
+          <a href="twitter.com"><img src="media/icons8-twitter-100.png" alt="twitter icon"></a>
+          <a href="tiktok.com"><img src="media/icons8-tiktok-100.png" alt="tiktok icon"></a>
+        </div>
+      </div>
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+        <div class="contact-info">
+          <h3>Contact Info</h3>
+          <p>Email: QuickCook@gmail.com</p>
+          <p>Phone: 091-123-4567</p>
+        </div>
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <form action="#">
+            <input type="email" placeholder="Email address">
+            <button type="submit">Subscribe</button>
+          </form>
+          <p>Unlock exclusive recipes with our subscription—<br>taste the difference today!</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 QuickCook. All Rights Reserved.</p>
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src = "script/script.js"></script>
+</body>
+</html>
